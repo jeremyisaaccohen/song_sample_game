@@ -10,6 +10,6 @@ REQ=$(curl --request GET \
 SAMPLE_PAGE=$(echo $REQ | jq '.response.hits[0].result.relationships_index_url')
 echo $SAMPLE_PAGE
 
-curl https://genius.com/Kendrick-lamar-sing-about-me-im-dying-of-thirst-sample | grep My\ Romance
+# curl https://genius.com/Kendrick-lamar-sing-about-me-im-dying-of-thirst-sample | grep My\ Romance
 
 #beautifulsoup to parse html
